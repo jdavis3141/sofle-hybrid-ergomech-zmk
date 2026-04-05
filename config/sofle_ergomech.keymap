@@ -3,7 +3,7 @@
  *
  * SPDX-License-Identifier: MIT
  */
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 450
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 300
 #include <dt-bindings/zmk/pointing.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
@@ -57,7 +57,7 @@
 &kp LSHFT   &kp Z     &kp X     &kp C      &kp V      &kp B    &kp N      &kp M      &kp COMMA     &kp DOT   &kp FSLH  &kp RSHFT
 &kp C_MUTE  &kp LGUI  &kp LALT  &kp LCTRL  &mo LOWER  &kp RET  &kp SPACE  &mo RAISE  &kp RCTRL     &kp RALT  &kp RGUI
                                                                &kp ENTER  &kp RIGHT  &kp UP  &kp LEFT  &kp DOWN
-            >;
+            >;ss
 
             sensor-bindings = <&mousescroll &inc_dec_kp PG_UP PG_DN>;
         };
